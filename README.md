@@ -1,6 +1,6 @@
-# LAB - Class 32
+# LAB - Class 33
 
-Project: drf-api-permissions-postgres
+Project: drf-auth
 
 Author: Nicholas Mercado
 
@@ -18,4 +18,23 @@ python manage.py test
 
 Any tests of note?
 
-[Test found here](books/tests.py)
+[Test found here](book/tests.py)
+
+## Thunder Client
+
+**Post**
+
+http://localhost:8000/api/token/
+
+In Body
+
+{
+    "username" :"admin",
+    "password": "admin"
+}
+
+**Get**
+
+http://localhost:8000/api/v1/book
+
+In Auth add access key
